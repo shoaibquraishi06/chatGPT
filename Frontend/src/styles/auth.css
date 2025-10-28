@@ -1,0 +1,132 @@
+@import './theme.css';
+
+/* Central container used by auth pages */
+.app-container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: var(--space-4);
+	background: linear-gradient(180deg, var(--bg), var(--bg));
+	font-family: var(--font-body);
+	color: var(--text);
+}
+
+.auth-wrap {
+	width: 100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+
+.auth-card {
+	width: 100%;
+	max-width: var(--auth-max-width);
+	background: var(--card-bg);
+	border-radius: var(--radius-md);
+	box-shadow: var(--shadow);
+	border: 1px solid var(--border);
+	padding: calc(var(--space-4) + 4px);
+	box-sizing: border-box;
+}
+
+.auth-header {
+	display:flex;
+	gap: var(--space-3);
+	align-items:center;
+	margin-bottom: var(--space-4);
+}
+
+.brand-dot {
+	width: 44px;
+	height: 44px;
+	border-radius: 10px;
+	background: linear-gradient(135deg, var(--primary), rgba(96,165,250,0.8));
+	box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+}
+
+.auth-title {
+	font-size: 1.125rem;
+	font-weight: 700;
+	line-height: 1.1;
+}
+
+.auth-sub {
+	font-size: 0.875rem;
+	color: var(--muted);
+}
+
+.auth-form { display:block; }
+
+.field { margin-bottom: var(--space-3); }
+
+.field label {
+	display:block;
+	font-size: 0.8125rem;
+	margin-bottom: var(--space-2);
+	color: var(--muted);
+}
+
+.input {
+	width:100%;
+	padding: 12px 14px;
+	border-radius: var(--radius-sm);
+	border: 1px solid var(--border);
+	background: transparent;
+	color: var(--text);
+	font-size: var(--text-size-base);
+	box-sizing: border-box;
+	outline: none;
+}
+
+.input:focus {
+	box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+	border-color: rgba(37,99,235,0.6);
+}
+
+.input-row { display:block; gap:var(--space-3); }
+
+.input-row .field { width:100%; }
+
+.actions {
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	gap: var(--space-3);
+	margin-top: var(--space-3);
+}
+
+.muted-link { color: var(--muted); text-decoration:none; font-size:0.9rem; }
+.muted-link:hover { text-decoration:underline; }
+
+.btn {
+	background: var(--primary);
+	color: var(--primary-contrast);
+	border: none;
+	padding: 10px 16px;
+	border-radius: 10px;
+	font-weight: 600;
+	cursor: pointer;
+	box-shadow: none;
+}
+
+.btn:active { transform: translateY(1px); }
+
+.legal {
+	margin-top: var(--space-4);
+	font-size: 0.8rem;
+	color: var(--muted);
+}
+
+/* Desktop: two-column name fields */
+@media (min-width: 640px) {
+	.input-row { display:flex; }
+	.input-row .field { width:50%; }
+	.input-row .field:first-child { padding-right: calc(var(--space-3) / 2); }
+	.input-row .field:last-child { padding-left: calc(var(--space-3) / 2); }
+}
+
+/* Slightly larger card on wider screens */
+@media (min-width: 1024px) {
+	.auth-card { padding: calc(var(--space-5) + 8px); }
+}
