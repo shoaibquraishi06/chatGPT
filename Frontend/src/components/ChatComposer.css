@@ -42,7 +42,7 @@
     border: 0;
     outline: none;
     background: transparent;
-    color: #101010;
+    color: #ffffff;
     font: inherit;
     line-height: 1.5;
     max-height: 260px;
@@ -58,6 +58,11 @@
 .composer-input::placeholder {
      color: #626262; 
      background-color: #101010;
+    }
+
+    .composer-input::placeholder:focus{
+   
+         background-color: #000000;
     }
 
 .composer-field .composer-input{

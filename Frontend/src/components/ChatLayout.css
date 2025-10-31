@@ -105,6 +105,7 @@
     background: #101010;
     border-color: #1e1e1e;
     border-radius: 10px;
+    border: none;
     color: var(--color-text);
 }
 
