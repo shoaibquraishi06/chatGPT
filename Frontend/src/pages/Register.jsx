@@ -48,10 +48,10 @@ const Register = () => {
     <div className="auth-wrap app-container">
       <div className="auth-card">
         <div className="auth-header">
-          <div className="brand-dot" />
+          
           <div>
             <div className="auth-title">Create your account</div>
-            <div className="auth-sub">Fast, seameless sign up — mobile first and responsive.</div>
+            <div className="auth-sub">Welcome to our service, Create your account to start your experiance</div>
           </div>
         </div>
 

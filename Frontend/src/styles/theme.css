@@ -80,8 +80,16 @@
 
 .composer{ display:flex; gap:8px; padding:12px; border-top:1px solid var(--border); background-color: #050505; }
 .composer textarea{ flex:1; border-radius:12px; padding:10px; border:1px solid var(--border); resize:none; font-family:inherit }
-.btn{ cursor:pointer; border-radius:8px; padding:8px 12px; border:1px solid var(--border); background:transparent }
+.btn{ cursor:pointer; border-radius:8px; padding:8px 12px; border:1px solid var(--border); background:#0037fd; font-weight: 400; color: #ebeced;  }
 .btn.send{ background:var(--primary); color:var(--primary-contrast); border:0 }
+
+
+  .btn:active{
+    scale: 0.95;
+    background:#0233e3d9;
+    transition: all ease-in-out 0.05s;
+  }
+
 
 /* Desktop layout */
 @media (min-width: 768px){

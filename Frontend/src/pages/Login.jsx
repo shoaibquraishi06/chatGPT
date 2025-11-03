@@ -43,7 +43,7 @@ const Login = () => {
     <div className="auth-wrap app-container">
       <div className="auth-card">
         <div className="auth-header">
-          <div className="brand-dot" />
+        
           <div>
             <div className="auth-title">Welcome back</div>
             <div className="auth-sub">Sign in to continue — we keep it minimal and secure.</div>
