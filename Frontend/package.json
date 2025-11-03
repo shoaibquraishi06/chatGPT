@@ -12,6 +12,7 @@
   "dependencies": {
     "@reduxjs/toolkit": "^2.9.2",
     "axios": "^1.12.2",
+    "build": "^0.1.4",
     "cors": "^2.8.5",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
