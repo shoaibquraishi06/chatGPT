@@ -13,6 +13,7 @@ const Register = () => {
    function handleChange(e) {
         const { name, value } = e.target;
         setForm({ ...form, [name]: value });
+        
     }
 
     async function handleSubmit(e) {
