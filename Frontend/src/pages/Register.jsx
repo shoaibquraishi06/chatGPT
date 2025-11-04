@@ -23,7 +23,7 @@ const Register = () => {
 
         console.log(form);
 
-        axios.post("https://zen-ai-mu2i.onrender.com/api/auth/register", {
+        axios.post("https://zen-ai-c6b4.onrender.com/api/auth/register", {
             email: form.email,
             fullName:{
               firstname: form.firstname,

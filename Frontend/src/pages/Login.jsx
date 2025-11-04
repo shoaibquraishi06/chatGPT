@@ -21,7 +21,7 @@ const Login = () => {
 
         console.log(form);
 
-        axios.post("https://zen-ai-mu2i.onrender.com/api/auth/login", {
+        axios.post("https://zen-ai-c6b4.onrender.com/api/auth/login", {
             email: form.email,
             password: form.password
         },
